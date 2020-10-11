@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="desctiption" content="Front end development course">
+  <meta name="keywords" content="HTML, CSS, Learning">
+  <meta name="author" content="Alexadra Stanjic">
+
+  <title>Navigation layout</title>
+
+  <link rel="stylesheet" type="text/css" href="resources/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+</head>
+
+    <body>
+
+      <div class="free-shiping-wrapper"><p>Free shipping on orders over &#36;250</p></div>
+
+        <div class="container">
+            <aside>
+                <div class="aside-wrapper">
+                    <div class="logo-wrapper"><img src="assets/logo-vip.png" alt="logo-vip-membership"></div>
+                    <ul>
+                        <li><a class="menu-item selected" data-content="orders-container">Your Orders</a></li>
+                        <li><a class="menu-item" data-content="reward-container">Reward-Status</a></li>
+                        <li><a class="menu-item" data-content="account-container">Account Settings</a></li>
+                        <li><a class="menu-item" data-content="payment-container">Payment Settings</a></li>
+                        <li><a class="menu-item" data-content="signOut-container">Sign Out</a></li>
+                    </ul>
+                 </div>
+          </aside>
+
+          <div class="main-content-wrapper">
+            <h2>
+              <div>Your</div>
+              <div>Orders</div>
+            </h2>
+              <div class="content orders-container">
+                    <div class="first-column-wrapper">
+
+                        <div class="img-wrapper">
+                            <img src="assets/product-1/product.png" alt="backpack-product">
+                        </div>
+                  </div>
+
+                  <div class="second-column-wrapper">
+                      <div class="info-wrapper">
+                        <span>April 1, 2019</span><span>Processing</span>
+                      </div>
+                      <div class="info-wrapper">
+                        <span>Order</span><span>30004</span>
+                      </div>
+                      <div class="info-wrapper">
+                        <span>Order Total </span><span>&#36;324.96</span>
+                      </div>
+                  </div>
+
+                  <div class="third-column-wrapper">
+                    <h2>
+                      <div>Your</div>
+                      <div>Orders</div>
+                    </h2>
+                  </div>
+                
+              </div>
+
+            <div class="content reward-container hidden"></div>
+
+            <div class="content account-container hidden"></div>
+
+            <div class="content payment-container hidden">
+              <div class="title-wrapper">
+                <h2>
+                  <div>Payment</div>
+                  <div>Methods</div>
+                </h2>
+              </div>
+
+              <div class="cards-wrapper">
+                <div class="card-one cards">
+                  <img src="assets/card-1.png" alt="">
+                </div>
+                <div class="card-two cards">
+                  <img src="assets/card-2.png" alt="">
+                </div>
+                <div class="card-three cards">
+                  <img src="assets/card-3.png" alt="">
+                </div>
+                <div class="add-card">
+                  <img src="assets/icon-plus.png" alt="">
+                  <div class="inner-text-wrapper">
+                    <p>add card</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="content signOut-container hidden"></div>
+
+            
+          </div>
+
+            <!-- <section>
+                <div class="content home-container">
+                    <p>home</p>
+                </div>
+                <div class="content about-container hidden">
+                    <p>about</p>
+                </div>
+                <div class="content contact-container hidden">
+                    <p>contact</p>
+                </div>
+            </section> -->
+        </div>
+        <script src="resources/main.js"></script>
+    </body>
+</html>
