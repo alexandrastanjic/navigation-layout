@@ -1,26 +1,185 @@
 <!DOCTYPE html>
 <html>
 
-		<head>
-			<meta charset="UTF-8">
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
-			<meta name="desctiption" content="Front end development course">
-			<meta name="keywords" content="HTML, CSS, Learning">
-			<meta name="author" content="Alexadra Stanjic">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="desctiption" content="Front end development course">
+	<meta name="keywords" content="HTML, CSS, Learning">
+	<meta name="author" content="Alexadra Stanjic">
 
-			<title>Navigation layout</title>
+	<title>Navigation layout</title>
 
-			<link rel="stylesheet" type="text/css" href="resources/main.css">
-			<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+	<link rel="stylesheet" type="text/css" href="resources/main2.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+		integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+		crossorigin="anonymous" />
 
-		</head>
+</head>
 
-		<body>
-				<div class="container">
-						
-				</div>
+<body>
+	<header>
+		<div class="top-strip-wrapper">
+			<p>Free shipping on orders over &#36;250</p>
+		</div>
 
-				<script src="resources/main.js"></script>
-		</body>
+		<div class="top-nav-wrapper">
+			<div class="logo-wrapper">
+				<img src="assets/logo-boundary.png" alt="logo-boundary">
+			</div>
+
+			<nav>
+				<ul>
+					<li><span>shop</span></li>
+					<li><a><img src="assets/icon-find.png" alt="icon-find"></a></li>
+					<li><a><img src="assets/icon-cart-2.png" alt="icon-cart"></a></li>
+					<li><a><img src="assets/icon-exit-3.png" alt="icon-exit"></a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<div class="container">
+		<aside>
+			<div class="aside-wrapper">
+				<div class="aside-logo-wrapper"><img src="assets/logo-vip.png" alt="logo-vip-membership"></div>
+				<ul>
+					<li><a class="menu-item selected" data-content="orders-container">Your Orders</a></li>
+					<li><a class="menu-item" data-content="reward-container">Reward-Status</a></li>
+					<li><a class="menu-item" data-content="account-container">Account Settings</a></li>
+					<li><a class="menu-item" data-content="payment-container">Payment Settings</a></li>
+					<li><a class="menu-item" data-content="signOut-container">Sign Out</a></li>
+				</ul>
+			</div>
+		</aside>
+
+		<div class="content-wrapper">
+			<div class="content orders-container">
+				<section class="title-wrapper">
+					<h2>
+						<div>Your</div>
+						<div>orders</div>
+					</h2>
+				</section>
+
+				<section class="product-wrapper">
+					<div class="img-wrapper">
+						<img src="assets/product-1/product.png" alt="">
+					</div>
+
+					<div class="details-wrapper">
+						<div class="left-wrapper">
+							<div class="wrapper">
+								<span>April 1, 2019</span>
+								<p>Processing</p>
+							</div>
+
+							<div class="wrapper">
+								<span>Order #</span>
+								<p>30004</p>
+							</div>
+
+							<div class="wrapper">
+								<span>Order total</span>
+								<p> &#36; 324.96</p>
+							</div>
+
+							<div class="bottom-wrapper">
+
+								<p>Also in this order</p>
+
+								<div class="bottom-images-wrapper">
+									<div class="addition-wrapper">
+										<img src="assets/product-1/addition-1.png" alt="">
+									</div>
+									<div class="addition-wrapper">
+										<img src="assets/product-1/addition-3.png" alt="">
+									</div>
+									<div class="addition-wrapper">
+										<img src="assets/product-1/addition-4.png" alt="">
+									</div>
+									<div class="addition-wrapper">
+										<span><i class="fas fa-plus"></i> 3 </span>
+										<span>more</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="right-wrapper">
+							<button>Order Details</button>
+							<span>Cancel / Modify</span>
+						</div>
+
+					</div>
+				</section>
+
+			</div>
+
+			<div class="content orderDetails-container hidden">
+				<section class="titles-wrapper">
+					
+					<h2>
+						<span>Your orders/Order #30002</span>
+						<div>Order</div>
+						<div>Details</div>
+					</h2>
+
+					<h4>
+						<div>Order</div>
+						<div>Cancelled</div>
+					</h4>
+				</section>
+
+				<section class="orderDetails-wrapper">
+					<div class="text-wrapper">
+						<span class="bigger">Billing</span>
+					</div>
+
+					<div class="text-wrapper">
+						<span>Rally Interative</span>
+						<span>244 W 300 N</span>
+						<span>Salt Lake City, Utah 84103</span>
+						<span>United States</span>
+						<span>(801) 64303595</span>
+					</div>
+
+					<div class="text-wrapper">
+						<span>Payment Status:</span>
+						<span>Refunded</span>
+					</div>
+
+					<div class="text-wrapper">
+						<span class="bigger">Shipping</span>
+					</div>
+					<div class="text-wrapper">
+						<span>Rally Interative</span>
+						<span>244 W 300 N</span>
+						<span>Salt Lake City, Utah 84103</span>
+						<span>United States</span>
+						<span>(801) 64303595</span>
+					</div>
+
+					<div class="text-wrapper">
+						<span>Payment Status:</span>
+						<span>Unfulfilled</span>
+					</div>
+				
+				</section>
+			</div>
+
+			<div class="content reward-container hidden"></div>
+
+			<div class="content account-container hidden"></div>
+
+			<div class="content payment-container hidden"></div>
+			
+			<div class="content signOut-container hidden"></div>
+
+		</div>
+	</div>
+
+	<script src="resources/main2.js"></script>
+</body>
+
 </html>
