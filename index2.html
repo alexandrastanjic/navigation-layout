@@ -23,22 +23,23 @@
 		<div class="top-strip-wrapper">
 			<p>Free shipping on orders over &#36;250</p>
 		</div>
-
-		<div class="top-nav-wrapper">
-			<div class="logo-wrapper">
-				<img src="assets/logo-boundary.png" alt="logo-boundary">
-			</div>
-
-			<nav>
-				<ul>
-					<li><span>shop</span></li>
-					<li><a><img src="assets/icon-find.png" alt="icon-find"></a></li>
-					<li><a><img src="assets/icon-cart-2.png" alt="icon-cart"></a></li>
-					<li><a><img src="assets/icon-exit-3.png" alt="icon-exit"></a></li>
-				</ul>
-			</nav>
-		</div>
 	</header>
+	<div class="top-menu-wrapper hide-menu">
+		<div class="logo-wrapper">
+			<img src="assets/logo-boundary.png" alt="logo-boundary">
+		</div>
+
+		<nav>
+			<ul>
+				<li><span>shop</span></li>
+				<li><a><img src="assets/icon-find.png" alt="icon-find"></a></li>
+				<li><a><img src="assets/icon-cart-2.png" alt="icon-cart"></a></li>
+				<li><a><img src="assets/icon-exit-3.png" alt="icon-exit"></a></li>
+			</ul>
+		</nav>
+	</div>
+
+
 	<div class="container">
 		<aside>
 			<div class="aside-wrapper">
@@ -48,7 +49,7 @@
 					<li><a class="menu-item" data-content="reward-container">Reward-Status</a></li>
 					<li><a class="menu-item" data-content="account-container">Account Settings</a></li>
 					<li><a class="menu-item" data-content="payment-container">Payment Settings</a></li>
-					<li><a class="menu-item" data-content="signOut-container">Sign Out</a></li>
+					<li><a class="menu-item" data-content="signOut-container"></a>Sign Out</a></li>
 				</ul>
 			</div>
 		</aside>
@@ -107,7 +108,7 @@
 						</div>
 
 						<div class="right-wrapper">
-							<button>Order Details</button>
+							<button id="orderDetails">Order Details</button>
 							<span>Cancel / Modify</span>
 						</div>
 
@@ -116,9 +117,9 @@
 
 			</div>
 
-			<div class="content orderDetails-container hidden">
+			<div class="content order-details-container hidden">
 				<section class="titles-wrapper">
-					
+
 					<h2>
 						<span>Your orders/Order #30002</span>
 						<div>Order</div>
@@ -131,7 +132,7 @@
 					</h4>
 				</section>
 
-				<section class="orderDetails-wrapper">
+				<section class="order-details-wrapper">
 					<div class="text-wrapper">
 						<span class="bigger">Billing</span>
 					</div>
@@ -164,22 +165,146 @@
 						<span>Payment Status:</span>
 						<span>Unfulfilled</span>
 					</div>
-				
+
 				</section>
 			</div>
 
-			<div class="content reward-container hidden"></div>
+			<div class="content reward-container hidden">
+				<section class="title-wrapper">
+					<h2>
+						<div>Reward</div>
+						<div> Status</div>
+					</h2>
+				</section>
 
-			<div class="content account-container hidden"></div>
+				<section class="rewards-info-wrapper">
+					<div class="text-wrapper">
+						<p>Activity</p>
+					</div>
 
-			<div class="content payment-container hidden"></div>
-			
-			<div class="content signOut-container hidden"></div>
+					<div class="text-wrapper bigger-font">
+						<span>VIP</span>
+						<span>Current Status</span>
+					</div>
+
+					<div class="text-wrapper bigger-font">
+						<span>Gold</span>
+						<span>Next tier</span>
+					</div>
+
+					<div class="text-wrapper bigger-font">
+
+					</div>
+					<div class="text-wrapper bigger-font">
+						<span>&#36; 678.42</span>
+						<span>Lifetime Spend</span>
+					</div>
+
+					<div class="text-wrapper bigger-font">
+						<span>&#36; 321.68</span>
+						<span>To Gold Status</span>
+					</div>
+
+					<div class="text-wrapper">
+
+					</div>
+					<div class="text-wrapper bigger-font">
+						<span>003</span>
+						<span>Orders</span>
+					</div>
+
+					<div class="text-wrapper bigger-font">
+						<span>007</span>
+						<span>Referrals</span>
+					</div>
+
+					<div class="text-wrapper">
+						<p>Benefits</p>
+					</div>
+
+					<div class="reward-image-wrapper">
+						<img src="assets/icon-recurrent.png" alt="">
+						<img src="assets/icon-savings.png" alt="">
+					</div>
+
+
+				</section>
+			</div>
+
+			<div class="content account-container hidden">
+				<section class="title-wrapper">
+					<h2>
+						<div>Account </div>
+						<div>Settings</div>
+					</h2>
+				</section>
+
+				<section class="account-info-wrapper">
+					<span class="subtitle-wrapper">Account</span>
+					<form class="account-data-wrapper">
+						<input type="text" placeholder="Ben Cline" id="name" name="name">
+						<input type="number" placeholder="1 801 641 09" id="number" name="number">
+						<input type="email" placeholder="ben@rallyinteractive.com" id="email" name="email">
+						<input type="password" placeholder="*********" id="password" name="password">
+					</form>
+					<button id="saveChanges">Save Changes</button>
+				</section>
+
+				<section class="address-wrapper">
+					<span class="subtitle-wrapper">Addresses</span>
+
+					<div class="address-card-wrapper">
+						<div>
+							<span>Ben Cline</span>
+							<span>1234 S. FLestwood Mac Dr</span>
+							<span>Salt Lake City, UT B4109</span>
+							<span>United States</span>
+							<span><i class="fas fa-plus"></i> 1 801 641 09</span>
+						</div>
+
+						<div>
+							<span>Ben Cline</span>
+							<span>C/O Rally Interactive</span>
+							<span>Salt Lake City, UT B4109</span>
+							<span>United States</span>
+							<span><i class="fas fa-plus"></i> 1 801 641 09</span>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<div class="content payment-container hidden">
+				<section class="title-wrapper">
+					<h2>
+						<div>Payments </div>
+						<div>Methods </div>
+					</h2>
+				</section>
+
+				<section class="cards-wrapper">
+					<div class="cards">
+						<img src="assets/card-1.png" alt="">
+					</div>
+					<div class="cards">
+						<img src="assets/card-2.png" alt="">
+					</div>
+					<div class="cards">
+						<img src="assets/card-3.png" alt="">
+					</div>
+					<div class="add-card">
+						<div class="inner-text-wrapper">
+							<img src="assets/icon-plus.png" alt="">
+							<span>add card</span>
+						</div>
+					</div>
+				</section>
+			</div>
+
 
 		</div>
 	</div>
 
-	<script src="resources/main2.js"></script>
+	<script src="resources/main.js"></script>
 </body>
 
 </html>
