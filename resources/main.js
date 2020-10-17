@@ -28,10 +28,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
       }
       document.getElementsByClassName(dataContent)[0].classList.remove("hidden");
     });
-
-
   }
-
 
   //////////////////////////////////////
   const orderDetails = document.getElementById("orderDetails");
@@ -48,4 +45,3 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
 
 });
-
