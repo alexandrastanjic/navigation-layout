@@ -37,9 +37,9 @@ header {
   display: none;
 }
 
-.hide-menu {
+/* .hide-menu {
   display: flex;
-}
+} */
 
 
 header {
@@ -296,8 +296,9 @@ aside ul li {
   margin-top: 90px;
 }
 
-.addition-wrapper span i {
-  font-size: 8px;
+.addition-wrapper span i,
+.address-card-wrapper span i {
+  font-size: 10px;
 }
 
 .addition-wrapper span {
