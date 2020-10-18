@@ -1,49 +1,49 @@
 * {
-  box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+	box-sizing: border-box;
+	font-family: "Montserrat", sans-serif;
 }
 
 html,
 body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  width: 100%;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
 }
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
 
 ul,
 ol {
-  list-style-type: none;
-  margin: 0;
+	list-style-type: none;
+	margin: 0;
 }
 
 p {
-  margin: 0;
+	margin: 0;
 }
 
 .container,
 header {
-  height: 100%;
-  width: 100%;
-  color: #231f20;
-  position: relative;
+	height: 100%;
+	width: 100%;
+	color: #231f20;
+	position: relative;
 }
 
 .hidden {
-  display: none;
+	display: none;
 }
 
-/* .hide-menu {
-  display: flex;
-} */
-
+.top-menu-wrapper.hidden {
+	display: none;
+}
 
 header {
-  height: 40px;
+	height: 40px;
 }
 
 .top-strip-wrapper,
@@ -62,7 +62,7 @@ nav,
 .reward-image-wrapper,
 .cards-wrapper,
 .add-card {
-  display: flex;
+	display: flex;
 }
 
 .top-strip-wrapper,
@@ -70,114 +70,109 @@ nav ul,
 aside,
 .aside-logo-wrapper,
 .add-card {
-  justify-content: center;
+	justify-content: center;
 }
 
 .top-strip-wrapper,
 .reward-image-wrapper,
 .add-card {
-  align-items: center;
+	align-items: center;
 }
 
 .top-strip-wrapper,
 .account-info-wrapper button {
-  height: 40px;
-  background-color: #231f20;
-  ;
+	height: 40px;
+	background-color: #231f20;
 }
 
 .top-strip-wrapper p,
 .account-info-wrapper button {
-  color: #ffffff;
-  font-size: 14px;
+	color: #ffffff;
+	font-size: 14px;
 }
 
 .top-menu-wrapper img {
-  height: 20px;
+	height: 20px;
 }
 
 .logo-wrapper {
-  width: 30%;
-  background-color: #F2EDE8;
-  padding: 20px 40px;
+	width: 30%;
+	background-color: #f2ede8;
+	padding: 20px 40px;
 }
 
 .logo-wrapper img {
-  height: 30px;
+	height: 30px;
 }
 
 nav {
-  width: 70%;
-  background-color: #F8F5F2;
-  display: flex;
-  justify-content: flex-end;
-  padding: 20px 40px;
+	width: 70%;
+	background-color: #f8f5f2;
+	display: flex;
+	justify-content: flex-end;
+	padding: 20px 40px;
 }
-
-
 
 .top-menu-wrapper,
 nav ul {
-  justify-content: space-between;
+	justify-content: space-between;
 }
 
 nav ul {
-  width: 400px;
+	width: 400px;
 }
 
 .top-menu-wrapper span {
-  text-transform: uppercase;
-  font-weight: 700;
+	text-transform: uppercase;
+	font-weight: 700;
 }
 
 aside {
-  width: 30%;
-  height: 100%;
-  background-color: #F2EDE8;
-  z-index: 1;
+	width: 30%;
+	height: 100%;
+	background-color: #f2ede8;
+	z-index: 1;
 }
 
 aside ul li {
-  padding: 5px;
-  font-weight: 700;
+	padding: 5px;
+	font-weight: 700;
 }
 
 .aside-wrapper {
-  margin-top: 200px;
+	margin-top: 200px;
 }
 
 .aside-logo-wrapper img {
-  margin-bottom: 20px;
-  height: 100px;
+	margin-bottom: 20px;
+	height: 100px;
 }
 
 .selected {
-  border-bottom: 4px solid #e8e0d8;
-  width: 100px;
+	border-bottom: 4px solid #e8e0d8;
+	width: 100px;
 }
 
 .content-wrapper {
-  position: relative;
-  width: 70%;
-  height: 100%;
-
+	position: relative;
+	width: 70%;
+	height: 100%;
 }
 
 .title-wrapper,
 .titles-wrapper {
-  align-items: flex-end;
-  font-size: 30px;
-  height: 35%;
+	align-items: flex-end;
+	font-size: 30px;
+	height: 35%;
 }
 
 .titles-wrapper h4 {
-  font-size: 20px;
+	font-size: 20px;
 }
 
 .titles-wrapper {
-  justify-content: space-between;
-  width: 78%;
-
+	justify-content: space-between;
+	width: 78%;
 }
 
 .orders-container,
@@ -186,246 +181,237 @@ aside ul li {
 .account-container,
 .payment-container,
 .signOut-container {
-  height: 100%;
-  padding-left: 60px;
-  background-color: #f8f5f2;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+	height: 100%;
+	padding-left: 60px;
+	background-color: #f8f5f2;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
 
+.on-top {
+  z-index: 10;
 }
 
 .orders-container {
-  z-index: 5;
-}
-
-.order-details-container {
-  z-index: 4;
+	z-index: 5;
 }
 
 .reward-container {
-  z-index: 3;
+	z-index: 3;
 }
 
 .account-container {
-  z-index: 2;
+	z-index: 2;
 }
 
 .payment-container {
-  z-index: 1;
+	z-index: 1;
 }
 
 .product-wrapper {
-  display: flex;
-  justify-content: space-evenly;
+	display: flex;
+	justify-content: space-evenly;
 }
 
 .img-wrapper {
-  background-color: #e8e0d8;
-  width: 35%;
-  height: 350px;
+	background-color: #e8e0d8;
+	width: 35%;
+	height: 350px;
 }
 
 .img-wrapper img {
-  height: 100%;
-  width: auto;
-  padding: 40px;
+	height: 100%;
+	width: auto;
+	padding: 40px;
 }
 
 .details-wrapper {
-  margin-left: 20px;
-  width: 65%;
-  justify-content: space-between;
+	margin-left: 20px;
+	width: 65%;
+	justify-content: space-between;
 }
 
 .left-wrapper div,
 .right-wrapper span {
-  font-weight: 700;
+	font-weight: 700;
 }
 
 .left-wrapper div {
-  margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 
 .left-wrapper .wrapper {
-  margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .left-wrapper .wrapper span {
-  font-size: 12px;
-  padding-bottom: 10px;
+	font-size: 12px;
+	padding-bottom: 10px;
 }
 
 .leftt-wrapper .wrapper p {
-  font-size: 20px;
+	font-size: 20px;
 }
 
 .right-wrapper {
-  font-size: 12px;
-  padding: 0 40px 5px 0;
+	font-size: 12px;
+	padding: 0 40px 5px 0;
 }
 
-.right-wrapper button {
-  display: block;
-  background-color: transparent;
-  border-color: unset;
-  padding: unset;
-  border-style: unset;
-  margin-bottom: 10px;
+.right-wrapper a {
+	display: block;
+	margin-bottom: 10px;
 }
 
-.bottom-images-wrapper>div {
-  background-color: #e8e0d8;
-  margin-right: 10px;
-  height: 80px;
-  width: 80px;
+.bottom-images-wrapper > div {
+	background-color: #e8e0d8;
+	margin-right: 10px;
+	height: 80px;
+	width: 80px;
 }
 
 .bottom-images-wrapper img {
-  height: 80%;
+	height: 80%;
 }
 
 .bottom-wrapper p {
-  font-size: 10px;
-  padding-bottom: 10px;
+	font-size: 10px;
+	padding-bottom: 10px;
 }
 
 .bottom-wrapper {
-  margin-top: 90px;
+	margin-top: 90px;
 }
 
 .addition-wrapper span i,
 .address-card-wrapper span i {
-  font-size: 10px;
+	font-size: 10px;
 }
 
 .addition-wrapper span {
-  font-size: 12px;
-  display: block;
-  text-align: center;
+	font-size: 12px;
+	display: block;
+	text-align: center;
 }
 
 .addition-wrapper span:nth-child(1) {
-  margin-top: 20px;
+	margin-top: 20px;
 }
 
 .text-wrapper span,
 .titles-wrapper h2 span {
-  display: block;
-  font-weight: 700;
-  font-size: 12px;
-  margin-bottom: 5px;
+	display: block;
+	font-weight: 700;
+	font-size: 12px;
+	margin-bottom: 5px;
 }
 
 .order-details-wrapper,
 .rewards-info-wrapper {
-  flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 
 .text-wrapper {
-  width: 33.3%;
-  margin: 30px 0;
+	width: 33.3%;
+	margin: 30px 0;
 }
 
 .text-wrapper .bigger {
-  font-size: 16px;
+	font-size: 16px;
 }
 
 .bigger-font span:nth-child(1) {
-  font-size: 16px;
-  text-transform: uppercase;
+	font-size: 16px;
+	text-transform: uppercase;
 }
 
 .text-wrapper p {
-  font-size: 14px;
-  font-weight: 700;
+	font-size: 14px;
+	font-weight: 700;
 }
 
 .reward-image-wrapper {
-  width: 250px;
-  height: 90px;
-  justify-content: space-between;
+	width: 250px;
+	height: 90px;
+	justify-content: space-between;
 }
 
 .reward-image-wrapper img {
-  height: 60px;
+	height: 60px;
 }
 
 .cards-wrapper {
-  flex-wrap: wrap;
+	flex-wrap: wrap;
 }
 
-.cards-wrapper>div {
-  width: 30%;
-  margin: 0 40px 10px 0;
-
+.cards-wrapper > div {
+	width: 30%;
+	margin: 0 40px 10px 0;
 }
 
 .cards img {
-  width: 100%;
+	width: 100%;
 }
 
 .add-card img {
-  height: 40px;
-  margin: 0 20px;
+	height: 40px;
+	margin: 0 20px;
 }
 
 .add-card {
-  background-color: #e3dfdc;
+	background-color: #e3dfdc;
 }
 
 .inner-text-wrapper span,
 .account-info-wrapper button {
-  display: block;
-  text-transform: uppercase;
+	display: block;
+	text-transform: uppercase;
 }
 
 .account-data-wrapper {
-  display: flex;
-  flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
 }
 
-
 ::placeholder {
-  color: #231f20;
-  padding-left: 10px;
+	color: #231f20;
+	padding-left: 10px;
 }
 
 .account-data-wrapper input,
 .account-info-wrapper button,
-.address-card-wrapper>div {
-  width: 40%;
-  margin: 10px 40px 10px 0;
-  height: 40px
+.address-card-wrapper > div {
+	width: 40%;
+	margin: 10px 40px 10px 0;
+	height: 40px;
 }
 
 .account-info-wrapper button {
-  margin-bottom: 40px;
+	margin-bottom: 40px;
 }
 
 .address-card-wrapper {
-  display: flex;
-  flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
 }
 
-.address-card-wrapper>div {
-  height: 150px;
-  background-color: #231f20;
-  color: white;
-  border-radius: 15px;
-  padding: 20px 0 0 15px;
-  font-size: 14px;
-
+.address-card-wrapper > div {
+	height: 150px;
+	background-color: #231f20;
+	color: white;
+	border-radius: 15px;
+	padding: 20px 0 0 15px;
+	font-size: 14px;
 }
 
 .address-card-wrapper div span {
-  display: block;
-  padding-top: 5px;
-
+	display: block;
+	padding-top: 5px;
 }
 
 .subtitle-wrapper {
-  font-weight: 700;
+	font-weight: 700;
 }
