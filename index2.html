@@ -53,14 +53,11 @@
 			<aside>
 				<div class="aside-wrapper">
 					<div class="aside-logo-wrapper">
-						<img src="assets/logo-vip.png" alt="logo-vip-membership" />
+						<img id= "change-img"src="assets/logo-vip.png" alt="logo-vip-membership" />
 					</div>
 					<ul>
 						<li>
-							<a
-								class="menu-item selected"
-								data-content="orders-container"
-                data-logo="change-logo">Your Orders</a>
+							<a class="menu-item selected"	data-content="orders-container">Your Orders</a>
 						</li>
 						<li>
 							<a class="menu-item" data-content="reward-container">Reward-Status</a>
@@ -132,7 +129,8 @@
 
 							<div class="right-wrapper">
 								<a id="orderDetails">Order Details</a>
-								<span>Cancel / Modify</span>
+								<!-- chiar daca nu implementam functionalitatea asta, tot ca si link ar trebui sa fie implementat un UI -->
+								<a> Cancel / Modify</a>
 							</div>
 						</div>
 					</section>
@@ -256,6 +254,7 @@
 						<span class="subtitle-wrapper">Account</span>
 						<form class="account-data-wrapper">
 							<input type="text" value="Ben Cline" id="name" name="name" />
+							<!-- atentie, valorie din layout nu sunt placeholder, ci values, ca placeholder putem avea de exemplu Please add you phone number here. Aceste deja sunt valori precompilate. Sper ca e clar dupa lectia de sambata. -->
 							<input
 								type="number"
 								placeholder="1 801 641 09"
