@@ -24,14 +24,15 @@ document.addEventListener('DOMContentLoaded', function(event) {
 				topMenu[0].classList.add('hidden');
 			}
 
-			if (menuItems[i].dataset.content === 'orders-container') {
-				logoImg.setAttribute('src', '../assets/logo-vip.png');
-			}	else if (menuItems[i].dataset.content === 'reward-container') {
-				logoImg.setAttribute('src', '../assets/logo-gold.png');
-			} else if (menuItems[i].dataset.content === 'account-container') {
-				logoImg.setAttribute('src', '../assets/logo-elite.png');
-			} else if (menuItems[i].dataset.content === 'payment-container') {
-				logoImg.setAttribute('src', '../assets/logo-member.png');
+			switch (menuItems[i].dataset.content) {
+				case 'orders-container': logoImg.setAttribute('src', 'assets/logo-vip.png');
+				break;
+				case 'reward-container': logoImg.setAttribute('src', 'assets/logo-gold.png');
+				break;
+				case 'account-container': logoImg.setAttribute('src', 'assets/logo-elite.png');
+				break;
+				case 'payment-container': logoImg.setAttribute('src', 'assets/logo-member.png');
+				break;
 			}
 
 			const dataContent = menuItem.dataset.content;
