@@ -63,18 +63,25 @@ $(function() {
 	const menuItems = $('.menu-item');
 	const logoImg = $('#change-img');
 
-	
-	$(menuItems).click(function() {
-		$(menuItems).each(function() {
+	// odata ce ai folosit deja selectorul jQuery mai sus, nu este necesar sa il folosesti si aici, menuItems e suficient
+	menuItems.click(function() {
+		//poti sa faci putin mai simplu in functie de ce am vazut data trecuta
+		menuItems.each(function() {
 			if ($(this).hasClass('selected')) {
 				$(this).removeClass('selected');
 			}
 		});
 		$(this).addClass('selected');
 
+		//nu ai nimic cu clasa content in cod, nu sunt convinsa ca asta ai vrut sa selectezi aici
 		const contentElements = $('.content');
-			// deci nu stiu daca macar e ceva corect la ce am facut mai jos, am citit eu ceva cu data() in jQUery dar n-am inteles daca face acelasi lucru ca dataset
+		// deci nu stiu daca macar e ceva corect la ce am facut mai jos, am citit eu ceva cu data() in jQUery dar n-am inteles daca face acelasi lucru ca dataset
 		const dataContent = menuItems.data($(contentElements));
+		
+		//asta s-ar putea sa fie de ce ai nevoie aici ca si alternativa la dataset din js
+		$(this).data('content'); 
+
+		// tu aici mergi pe selectia elementelor cu o clasa content, care, repet nu exista la tine in cod. iti sugerez sa pornesti de la versiunea JS, nu sa repari ca risti sa vezi aceeasi logica si sa nu iti dai seama unde e gresit
 		$(contentElements).each(function() {
 			if ($(this).hasClass('hidden')) {
 				return;
@@ -94,6 +101,7 @@ $(function() {
 		});
 	});
 
+	// nu ai nevoie de dublu selector aici, am corectat putin mai sus, aici te las pe tine sa te ocupi
 	$(orderDetails).on('click', function() {
 		$(orderDetailsContainer).removeClass('hidden');
 		$(orderDetailsContainer).addClass('on-top');
