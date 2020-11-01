@@ -138,12 +138,14 @@ $(function() {
 		} else {
 			contentElements.addClass('hidden');
 		}
-		$(this).removeClass('hidden');
+		dataContent.removeClass('hidden');
 
+	
+	
 		if (menuItems.hasClass('selected')) {
 			menuItems.removeClass('selected');
 		}
-		dataContent.addClass('selected');
+		$(this).addClass('selected');
 	});
 
 	orderDetails.click(function() {
