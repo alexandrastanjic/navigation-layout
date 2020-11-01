@@ -132,19 +132,15 @@ $(function() {
 
 	menuItems.click(function() {
 		const dataContent = $(this).data('content');
+		contentElements.addClass('hidden');
 
-		if (contentElements.hasClass('hidden')) {
-			return true;
-		} else {
-			contentElements.addClass('hidden');
-		}
-		dataContent.removeClass('hidden');
-
+		contentElements.each(function(index, item) {
+			if($(item).hasClass(dataContent)) {
+				$(item).removeClass('hidden');
+			} 
+		});
 	
-	
-		if (menuItems.hasClass('selected')) {
-			menuItems.removeClass('selected');
-		}
+		menuItems.removeClass('selected');
 		$(this).addClass('selected');
 	});
 
