@@ -38,10 +38,6 @@ header {
 	display: none;
 }
 
-.top-menu-wrapper.hidden {
-	display: none;
-}
-
 header {
 	height: 40px;
 }
